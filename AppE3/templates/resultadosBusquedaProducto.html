@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block contenidoQueCambia %}
+<h1>Resultados de la busqueda</h1>
+<hr>
+
+{% if producto %}
+	<ul>
+		{% for prod in producto %}
+			<li>{{prod}}</li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<h3>No hay resultados para esta busqueda</h3>
+{% endif %}
+
+{% endblock contenidoQueCambia %}

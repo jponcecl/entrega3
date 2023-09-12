@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block contenidoQueCambia %}
+<form action="{% url 'codigobarraForm' %}" method="post">{% csrf_token %}
+	<table border="0">
+		<tr><td>Codigo de barra</td><td><input type="text" maxlength="16" name="codigo" required></td></tr>
+	</table>
+	<input type="submit" value="Enviar">
+</form>
+{% endblock contenidoQueCambia %}

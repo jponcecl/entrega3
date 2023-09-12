@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block contenidoQueCambia %}
+<h1>Busqueda de productos</h1>
+<hr>
+<form action="{% url 'buscarProd' %}" method="get">
+	<table border="0">
+		<tr><td>Nombre</td><td><input type="text" maxlength="40" name="nombre" required></td></tr> 
+	</table>
+	<input type="submit" value="Buscar">
+</form>
+{% endblock contenidoQueCambia %}

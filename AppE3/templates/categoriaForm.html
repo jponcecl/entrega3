@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block contenidoQueCambia %}
+<form action="{% url 'categoriaForm' %}" method="post">{% csrf_token %}
+	<table border="0">
+		<tr><td>Nombre Categoria</td><td><input type="text" maxlength="40" name="nombre" required></td></tr>
+	</table>
+	<input type="submit" value="Enviar">
+</form>
+{% endblock contenidoQueCambia %}
