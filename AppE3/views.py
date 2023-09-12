@@ -5,16 +5,16 @@ from .models import Producto, Categoria, CodigoBarra, Usuario
 # Create your views here.
 
 def inicio(req):
-    return HttpResponse("Vista inicio")
+    return render(req, "inicio.html")
 
 def producto(req):
-    return HttpResponse("Vista producto")
+    return render(req, "producto.html")
 
 def categoria(req):
-    return HttpResponse("Vista categoria")
+    return render(req, "categoria.html")
 
 def codigobarra(req):
-    return HttpResponse("Vista CodigoBarra")
+    return render(req, "codigobarra.html")
 
 def usuario(req):
-    return HttpResponse("Vista usuario")
+    return render(req, "usuario.html")
